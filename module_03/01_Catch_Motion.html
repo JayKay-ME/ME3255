@@ -793,13 +793,13 @@ save your variables <code class="docutils literal notranslate"><span class="pre"
 <section id="numerical-derivatives">
 <h2>Numerical derivatives<a class="headerlink" href="#numerical-derivatives" title="Link to this heading">#</a></h2>
 <p>You just computed the average velocity between two captured ball positions using <em>numerical derivative</em>. The velocity is the <em>derivative</em> of position with respect to time, and you can approximate its instantaneous value with the average velocity between two close instants in time:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6a5befe8-2b22-452d-9964-f0b3c1b36137">
-<span class="eqno">(1)<a class="headerlink" href="#equation-6a5befe8-2b22-452d-9964-f0b3c1b36137" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-98718497-25bb-4e82-af44-67cb79b2453d">
+<span class="eqno">(1)<a class="headerlink" href="#equation-98718497-25bb-4e82-af44-67cb79b2453d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 v(t) = \frac{dy}{dt} \approx \frac{y(t_i+\Delta t)-y(t_i)}{\Delta t}
 \end{equation}\]</div>
 <p>And acceleration is the <em>derivative</em> of velocity with respect to time; you can approximate it with the average acceleration within a time interval:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-322b7988-9f5c-4b1e-baf5-0a2a958a8118">
-<span class="eqno">(2)<a class="headerlink" href="#equation-322b7988-9f5c-4b1e-baf5-0a2a958a8118" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-33cae161-c1b1-485b-8d94-5773e3a09fcf">
+<span class="eqno">(2)<a class="headerlink" href="#equation-33cae161-c1b1-485b-8d94-5773e3a09fcf" title="Permalink to this equation">#</a></span>\[\begin{equation}
 a(t) = \frac{dv}{dt} \approx \frac{v(t_i+\Delta t)-v(t_i)}{\Delta t}
 \end{equation}\]</div>
 <p>As you can imagine, the quality of the approximation depends on the size of the time interval: as <span class="math notranslate nohighlight">\(\Delta t\)</span> gets smaller, the error also gets smaller.</p>
